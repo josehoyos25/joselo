@@ -1,0 +1,39 @@
+body{
+    background-size: cover;
+}
+
+.h1{
+    text-align: center;
+    color: black;
+}
+.box-1{
+    border: 7px double blue;
+    display: flex;
+
+}
+.parr-style, .parr-padding{
+    font-size: 1.8em;
+    margin: 10px;
+    text-align: justify;
+    border: 5px solid blue;
+    width: 300px;
+    height: 400px;
+    float:left; 
+
+
+}
+
+#uno {
+    border: 5px dashed rgb(0, 255, 191);
+    
+}
+#dos{
+    border: 5px dotted red;
+}
+#tres{
+    border: 5px ridge violet;
+
+}
+#cuatro{
+    border: 5px inset green;
+}

@@ -1,0 +1,22 @@
+body{
+    background-color: blue;
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+
+}
+
+.courier-font{
+    font-family: 'WaltographRegular';
+    color: aliceblue;
+    font-size: 200px;
+}
+p {
+    font-family: 'WaltographRegular';
+    font-weight: normal;
+    font-style: normal;
+ }
