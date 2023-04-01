@@ -19,6 +19,7 @@ nav{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    box-shadow: 5px 5px 10px  rgb(182, 184, 189);
 }
 .menu_horizontal li{
     border-right: 1px solid #239B56;
@@ -37,7 +38,7 @@ nav{
     display: none;
     list-style: none;
     width: 20%;
-    background-color: #F2F3F4;
+    background-color: rgb(219, 218, 218);
     font-size: 13px;
 }
 .menu_horizontal li:hover .menu_vertical{
@@ -51,6 +52,22 @@ nav{
 }
 .imagen{
     margin-left: 20%;
+}
+.solo-vertical {
+    max-height: 600px;
+    margin-left: 30px;
+    margin-top: 30px;
+    max-width: 230px;
+    background-color: rgb(90, 87, 87);
+    color: white;
+    display: list-item;
+}
+.solo{
+    list-style: none;
+    margin: 14px;
+    display:flex;
+    border-right: none;
+    cursor: pointer;
 }
 
 
