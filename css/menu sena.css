@@ -42,7 +42,7 @@ nav{
     font-size: 13px;
 }
 .menu_horizontal li:hover .menu_vertical{
-    display: block;
+    display: block; 
 }
 .menu_vertical li:hover{
     background-color: #3c3c3c;
