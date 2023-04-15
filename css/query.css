@@ -82,6 +82,7 @@ li a .active, li a:hover{
         display: block;
         margin: 50px 0;
         line-height: 30px;
+        border-bottom: 1px solid white;
     }
     nav ul li a{
         font-size: 1.7rem;
