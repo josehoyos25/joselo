@@ -37,20 +37,17 @@
     top: -80px;
     background-color: rgba(43, 54, 50, 0.734);
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     margin: auto;
 }
 .icono .user-i-box{
     margin: auto;
-    font-size: 100px;
+    font-size: 110px;
     color: white;
 }
 .user-i-style{
     color: aliceblue;
-}
-.fa-solid{
-    padding: 6px;
 }
 input[type="text"]{
     border: 0;
@@ -58,15 +55,31 @@ input[type="text"]{
     font-size: 1.5em;
     border-bottom: 2px solid white;
     margin-bottom: 30px;
-   
+}
+input[type="password"]{
+    border: 0;
+    background-color: transparent;
+    font-size: 1.5em;
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
 }
 input[type="text"]:focus{
     outline: none;
 }
+input[type="password"]:focus{
+    outline: none;
+}
+.texto{
+    margin-top: 0;
+    text-align: center;
+    font-size: 2em;
+}
 .uno{
+    margin-top: 20px;
     width: 330px;
-    margin: auto;
+    /* margin: auto; */
     justify-content: center;
+    text-align: center;
 }
 ul li a{
     font-size: 1.2em;
@@ -82,10 +95,13 @@ ul li a:hover{
     background-color: rgba(255, 0, 0, 0.556);
     color: whitesmoke;
     width: 200px;
-    margin-top: 100px;
+    margin-top: 45px;
     font-size: 30px;
     border-radius: 10px;
     cursor: pointer;
+}
+.boton #btn:hover{
+    background-color: black;
 }
 ::placeholder{
     color: rgba(0, 0, 0, 0.788);
@@ -96,8 +112,8 @@ ul li a:hover{
     }
     .form{
         background-color: rgba(0, 255, 255, 0.569);
-        width: 300px;
-        height: 370px;
+        width: 320px;
+        height: 390px;
         border-radius: 10px;
 } 
 .icono{
@@ -108,8 +124,8 @@ ul li a:hover{
     top: -60px;
     background-color: rgba(43, 54, 50, 0.734);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     margin: auto;
 }
 .icono .user-i-box{
@@ -124,6 +140,18 @@ input[type="text"]{
     border-bottom: 2px solid white;
     margin-bottom: 30px;
 }
+input[type="password"]{
+    border: 0;
+    background-color: transparent;
+    font-size: 1.2em;
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
+}
+.texto{
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
 ul li a{
     margin-top: 100px;
     padding: 10px;
@@ -134,7 +162,7 @@ ul li a{
     background-color: rgba(255, 0, 0, 0.556);
     color: whitesmoke;
     width: 120px;
-    margin-top: 80px;
+    margin-top: 20px;
     float: left;
     margin-left: 90px;
     font-size: 20px;
