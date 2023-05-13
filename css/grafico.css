@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.imagen{
+    background-image: url(../img/wallpaperbetter.jpg);
+    background-size: cover;
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+.fondo{
+    color: #FFFFFF;
+    background-color: black;
+  }
+.box-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    border-left: 5px solid  black;
+    border-bottom: 5px solid black;
+}
+.uno{
+    margin-top: 410px;
+    width: 100px;
+    height: 200px;
+    background-color: #E8D27F;
+    /* margin: 10px; */
+    color: black;
+    font-size: 1.5em;
+    font-weight: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dos{
+    margin-top: 360px;
+    width: 100px;
+    height: 250px;
+    background-color: #80CBC4;
+    /* margin: 10px; */
+    color: black;
+    font-size: 1.5em;
+    font-weight: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tres{
+    margin-top: 260px;
+    width: 100px;
+    height: 350px;
+    background-color: #A5D6A7;
+    /* margin: 10px; */
+    color: black;
+    font-size: 1.5em;
+    font-weight: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuatro{
+    margin-top: 160px;
+    width: 100px;
+    height: 450px;
+    background-color: #78909C;
+    /* margin: 10px; */
+    color: black;
+    font-size: 1.5em;
+    font-weight: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cinco{
+    margin-top: 470px;
+    width: 100px;
+    height: 600px;
+    background-color: #E57373;
+    margin: 10px;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
