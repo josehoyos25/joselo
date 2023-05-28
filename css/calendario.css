@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-content{
+    background-color: aliceblue;
+    justify-content: center;
+    margin-right: 100px;
+    display: grid;
+    width: 1050px;
+    height: 1200px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 10px;
+    margin: auto;
+}
+.fecha{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 3px solid indianred;
+}
+.fecha h1{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #D2B48C;
+    font-size: 5em;
+    margin: 0;
+} 
+.fecha p{
+    font-size: 1.4em;
+    margin: 5px;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+.calendario{
+    display: grid;
+    width: 1000px;
+    height: 800px;
+    grid-template-columns: repeat(7, minmax(120px, 1fr));
+    grid-auto-rows: 120px;
+    grid-gap: 10px;
+}
+.dia-semana{
+    text-align: right;
+    padding: 10px 15px;
+    background-color: lightgray;
+}
+.nombre-semana{
+    margin-left: 20px;
+    width: 130px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    background-color: lightsteelblue;
+}
+.primero{
+    background-color: #F0E68C;
+}
+.festivo{
+    background-color: skyblue;
+}
+.festivo:hover{
+    background-color: #E9967A;
+    cursor: pointer;
+}
+.domingo{
+    text-align: right;
+    padding: 10px 15px;
+    background-color: skyblue;
+}
+.domingo:hover{
+    background-color: #E9967A;
+    cursor: pointer;
+}
+.fiesta{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    text-align: left;
+    font-size: 1em;
+}
+.ultimo{
+    background-color: #F0E68C;
+    grid-column-start: 2;
+    grid-column-end: 8;
+}
+.numero{
+    font-size: 1.5em;
+}
+.uno{
+    display: flex;
+    justify-content: space-evenly;
+    height: 110px;
+}
+.lunas{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    text-align: left;
+}
