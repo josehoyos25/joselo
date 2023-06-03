@@ -68,12 +68,15 @@ h2{
     background-color: lightsteelblue;
 }
 .primero{
+    grid-column-start: 1;
+    grid-column-end: 6;
     background-color: #F0E68C;
 }
 .festivo{
     background-color: skyblue;
 }
 .festivo:hover{
+    transition: .3s;
     background-color: #E9967A;
     cursor: pointer;
 }
@@ -83,6 +86,7 @@ h2{
     background-color: skyblue;
 }
 .domingo:hover{
+    transition: .3s;
     background-color: #E9967A;
     cursor: pointer;
 }
