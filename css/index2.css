@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    font-family: 'Signika', sans-serif;
+    position: absolute;
+}
+.logo{
+    font-weight: 600;
+    font-size: 4em;
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    color: black;
+    padding: 6px 20px;
+    font-weight: 500;
+    font-size: 2em;
+    transition: all .3s ease 0s;
+}
+a{
+    display: inline-block;
+    color: black;
+    padding: 6px 20px;
+    font-weight: 500;
+    font-size: 1em;
+    transition: all .3s ease 0s;   
+}
+a:hover{
+    border-radius: 20px;
+    background-color: rgb(31, 143, 255);
+    color: white;
+    cursor: pointer;
+}
+ul li:hover{
+    border-radius: 20px;
+    background-color: rgb(31, 143, 255);
+    color: white;
+    cursor: pointer;
+}
+header{
+    position: absolute;
+    bottom: 30%;
+    padding: 0 50px;
+}
+.animacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7em;
+}
+.letra{
+    font-weight: 700;
+    transition: .4s;
+    transform: translateX(0);
+    cursor: grab;
+}
+.letra:hover{
+    transform: translateY(-1rem);
+    background: -webkit-repeating-linear-gradient(120deg, hsl(210, 100%, 52%), hsl(56, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header h2{
+    font-size: 4em;
+}
+header p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+header button{
+    padding: 0 5px;
+    width: 140px;
+    outline: none;
+    border: 0;
+    height: 40px;
+    font-weight: 500;
+    background-color: dodgerblue;
+    transition: width .5s;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+}
+header button:hover{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 160px;
+}
+img{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    margin-right: 10px;
+    float: right;
+    bottom: 0;
+    z-index: 999;
+}
+.redes{
+    font-size: 3em;
+    bottom: 8%;
+    position: absolute;
+    padding: 0 50px;
+}
+.redes > i{
+
+    font-size: 3em;
+    padding: 0 10px;
+    transition: all .3s ease 0s;
+    cursor: pointer;
+}
+.redes >i:hover{
+    color: dodgerblue;
+}

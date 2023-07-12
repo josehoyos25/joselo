@@ -87,6 +87,7 @@ h2{
 }
 .domingo:hover{
     transition: .3s;
+    
     background-color: #E9967A;
     cursor: pointer;
 }
