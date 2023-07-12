@@ -7,6 +7,9 @@
 nav{
     height: 80px;
 }
+body{
+    background-color: aliceblue;
+}
 .main-img-box{
     display: flex;
     justify-content: center;
