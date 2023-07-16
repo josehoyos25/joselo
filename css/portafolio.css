@@ -35,12 +35,13 @@ body{
     margin-top: 100px;
     width: 100%;
     margin-top: 10px;
-    display: grid;
+    display: grid; 
     gap: 15px;
-    grid-template: "empty-izq   colores   fuentes    bordes      sombras " 500px
-                   "empty-izq   catalogo    tablas   formulario   iconos " 500px 
-                   "empty-izq   menus     css         random      random1 " 500px / 
-                    1fr         350px      350px      350px        350px     1fr;
+    grid-template: "empty-izq   colores   fuentes    bordes " 500px
+                   "empty-izq   sombras    catalogo  tablas " 500px 
+                   "empty-izq   formulario   iconos   menus " 500px 
+                   "empty-izq   css        random     random1 " 500px / 
+                    1fr         350px      350px      350px        1fr;
 }
 .colores{
     grid-area: colores;
