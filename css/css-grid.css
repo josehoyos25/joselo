@@ -23,8 +23,9 @@ nav{
     margin-top: 20px;
     display: grid;
     gap: 40px;
-    grid-template: "empty-izq calendario maquetacion maquetacion2 " 540px /
-                    1fr       350px     350px     350px        1fr;
+    grid-template: "empty-izq  calendario maquetacion   maquetacion2 " 540px 
+                    "empty-izq  pagina     random       random"     540px /
+                    1fr        350px       350px        350px        1fr;
 }
 .calendario{
     grid-area: calendario;
@@ -34,6 +35,15 @@ nav{
 }
 .maquetacion2{
     grid-area: maquetacion2;
+}
+.pagina{
+    grid-area: pagina;
+}
+.random{
+    grid-area: random;
+}
+.random1{
+    grid-area: random1;
 }
 img{
     width: 100%;
