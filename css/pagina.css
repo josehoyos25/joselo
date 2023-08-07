@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main-img-box{    
+    height: 20px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    justify-content: space-between;
+}
+.main-img-box1{    
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+}
+.uno{
+    height: 350px;
+    width: 30%;
+}
+a{
+    color: #BFC9CA;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.links{
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 1em;
+    display: flex;
+}
+i{
+    margin-top: 10px;
+    font-size: 1.5em;
+    padding: 10px;
+}
+.logo{
+    margin-left: 50px;
+    width: 80px;
+    height: 30px;
+}
+.busqueda{
+    display: flex;
+    margin-left: 30px;
+}
+.article-box{
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    gap: 40px;
+    grid-template: "empty-izq article-1 article-2 article-3 " 700px 
+                    "empty-izq article-4 article-5 article-6 " 700px /
+                    1fr       350px     350px     350px        1fr;
+}
+.article-1{
+    grid-area: article-1;
+}
+.article-2{
+    grid-area: article-2;
+}
+.article-3{
+    grid-area: article-3;
+}
+.article-4{
+    grid-area: article-4;
+}
+.article-5{
+    grid-area: article-5;
+}
+.article-6{
+    grid-area: article-6;
+}
+img{
+    width: 100%;
+    border-radius: 10px;/* 
+    height: 100%; */
+}
+img:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transform: scale(1.1); 
+    transition: 0.5s;
+    cursor: pointer;
+}
+.articles{
+    background-color: darkgray;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.text-article{
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+    border-bottom: 2px solid gold;
+    padding-bottom: 15px;
+}
+h2{
+    padding: 20px;
+}
+.text-content{
+    color: bla35;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    text-align: justify;
+    margin-top: 15px;
+}
+@media only screen and (max-width: 1500px){
+    .main-img-box{
+        width: 100%;
+    }
+    .uno{
+        height: 300px;
+        width: 30%;
+    }
+    .article-box{
+        width: 100%;
+        margin-top: 40px;
+        display: grid;
+        gap: 30px;
+        grid-template: "empty-izq article-1 article-2 article-3 " 650px 
+                        "empty-izq article-4 article-5 article-6 " 500px /
+                        1fr       300px     300px     300px        1fr;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .main-img-box{
+        width: 100%;
+    }
+    .uno{
+        height: 200px;
+        width: 25%;
+    }
+    .article-box{
+        align-items: center;
+        width: 100%;
+        margin-top: 40px;
+        display: grid;
+        gap: 30px;
+        grid-template: "empty-izq article-1 article-2 article-3 " 600px 
+                        "empty-izq article-4 article-5 article-6 " 600px /
+                        1fr       300px     300px     300px        1fr;
+    }
+}
+@media only screen and (max-width: 900px){
+    .main-img-box{
+        width: 100%;
+    }
+    .uno{
+        height: 200px;
+        width: 30%;
+    }
+    .article-box{
+        width: 100%;
+        margin-top: 40px;
+        display: grid;
+        gap: 30px;
+        grid-template: "empty-izq article-1 article-2" 800px 
+                        "empty-izq article-3 article-4" 900px
+                        "empty-izq article-5 article-6" 400px /
+                        1fr       350px     350px     350px        1fr;
+    }
+}
+@media only screen and (max-width: 500px){
+    .main-img-box{
+        width: 100%;
+    }
+    .uno{
+        height: 200px;
+        width: 50%;
+    }
+    .links{
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 1em;
+        display: flex;
+    }
+    .article-box{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 40px;
+        display: grid;
+        gap: 30px;
+        grid-template: "empty-izq article-1" 690px 
+                        "empty-izq article-2" 730px
+                        "empty-izq article-3" 710px
+                        "empty-izq article-4"650px
+                        "empty-izq article-5"710px
+                        "empty-izq article-6" 650px /
+                        1fr       350px     350px     350px        1fr;
+    }
+}
