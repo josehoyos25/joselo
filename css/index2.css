@@ -130,3 +130,60 @@ img{
 .redes >i:hover{
     color: dodgerblue;
 }
+@media only screen and (max-width: 720px){
+    html{
+        font-size: 62.5%;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-color: aliceblue;
+        font-family: 'Signika', sans-serif;
+        position: absolute;
+    }
+    .logo{
+        font-weight: 600;
+        font-size: 4em;
+    
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 50px;
+        list-style: none;
+    }
+    ul li{
+        display: inline-block;
+        color: black;
+        padding: 6px 20px;
+        font-weight: 500;
+        font-size: 2em;
+        transition: all .3s ease 0s;
+    }
+    a{
+        display: inline-block;
+        color: black;
+        padding: 6px 20px;
+        font-weight: 500;
+        font-size: 1em;
+        transition: all .3s ease 0s;   
+    }
+    header{
+        position: absolute;
+        bottom: 20%;
+        padding: 0 50px;
+    }
+    img{
+        border-radius: 50%;
+        width: 450px;
+        height: 450px;
+        margin-right: 200px;
+        float: right;
+        bottom: 0;
+        z-index: 999;
+    }
+}
+
+
