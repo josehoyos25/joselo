@@ -9,7 +9,7 @@ nav{
     position: fixed;
     width: 100%;
     border-bottom: 2px solid rgb(113, 80, 80);
-    z-index: 2;
+    z-index: 1;
 }
 .p-net{
     color: red;
