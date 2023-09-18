@@ -63,7 +63,7 @@ body{
 
 video{
     position: absolute;
-    top: 0;
+    top: 60px;
     left: 0;
     width: 100%;
     height: 75%;
@@ -71,7 +71,7 @@ video{
 }
 .img-principal{
     width: 100%;
-    height: 600px;/* 
+    height: 700px;/* 
     background-image: url(../img/better.jpg); */
     background-size: cover;
     padding-top: 60px;
@@ -111,7 +111,6 @@ video{
     color: rgb(255, 251, 251);
 }
 .name{
-    margin-top: 100px;
     margin-bottom: 10px;
     color: white;
 }
