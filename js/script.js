@@ -1,8 +1,3 @@
-let 
-
-
-
-
 const carousel = document.getElementById('carousel');
 const prevButton = document.getElementById('prev-button');
 const nextButton = document.getElementById('next-button');
