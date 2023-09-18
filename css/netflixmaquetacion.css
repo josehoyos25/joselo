@@ -4,27 +4,32 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 nav{
-    background-color: rgba(0, 0, 0, 0.649);
     height: 60px;
+    display: flex;
+    flex-direction: column;
     position: fixed;
     width: 100%;
-    border-bottom: 2px solid rgb(113, 80, 80);
     z-index: 2;
 }
-.p-net{
+/* .p-net{
     color: red;
     font-size: 25px;
     float: left;
     margin-top: 18px;
     margin-left: 5%;
-}
+} */
 ul{
+    background-color: rgba(0, 0, 0, 0.495);
+    width: 40px;
+    padding-left: 1%;
+    margin-top: 20%;
+    top: 30px;
     display: flex;
     float: left;
-    margin-left: 5%;
 }
 .right{
     display: flex;
+    flex-direction: column;
     float: right;
 }
 
@@ -63,7 +68,7 @@ body{
 
 video{
     position: absolute;
-    top: 60px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 75%;
@@ -71,7 +76,7 @@ video{
 }
 .img-principal{
     width: 100%;
-    height: 700px;/* 
+    height: 650px;/* 
     background-image: url(../img/better.jpg); */
     background-size: cover;
     padding-top: 60px;
@@ -212,17 +217,26 @@ video{
 #next-button {
     cursor: pointer;
 }
-/* .slide {
-    flex: 0 0 200px;
-    margin-right: 10px;
+/* Barras */
+/* .barra-signal {
+    width: 100%;
+    height: 10px;
+    background-color: red;
+    margin-left: 20px;
+    z-index: 40;
     position: relative;
-    cursor: pointer;
+    top: -50;
 }
+.box-barra-signal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.barra-signal-current{
 
-.slide img {
-    width: 100px;
-    height: 100px;
 } */
+
 .flecha-izquierda{
     cursor: pointer;
 }
