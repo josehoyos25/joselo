@@ -44,7 +44,7 @@ h1{
     grid-template: "empty-izq   colores   fuentes    bordes " 500px
                    "empty-izq   sombras    catalogo  tablas " 500px 
                    "empty-izq   formulario   iconos   menus " 500px 
-                   "empty-izq   css        replica     random1 " 500px / 
+                   "empty-izq   css        replica     carrito " 500px / 
                     1fr         350px      350px      350px        1fr;
 }
 .colores{
@@ -80,8 +80,8 @@ h1{
 .replica{
     grid-area: replica;
 }
-.random1{
-    grid-area: random1;
+.carrito{
+    grid-area: carrito;
 }
 img{
     width: 100%;
