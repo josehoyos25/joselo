@@ -16,6 +16,9 @@
 #subTotal{
     font-weight: 600;
 }
+#valorSubtotal{
+    font-weight: 600;
+}
 .btn-pago-productos{
     grid-area: btn-pago-productos;
     background-color: rgb(240, 240, 80);
@@ -83,7 +86,14 @@
     border-right: 2px solid black;
     background-color: white;
 }
-
+.signo-peso{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.valor-unitario-producto{
+    font-weight: 700;
+    font-size: 1.5;
+}
 @media only screen and  (min-width: 430px) and (max-width: 834px){
     .main-box {
         width: 100%;
