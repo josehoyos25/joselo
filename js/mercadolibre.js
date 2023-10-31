@@ -13,11 +13,38 @@ class Automovil {
 }
 let auto1 = new Automovil("Toyota", "TXL", 150000000, "2021 ·", " 25.400 km ·", " Pitalito-Huila", "img/Toyota_Prado.jpg");
 /* alert (auto1.marca + " " + auto1.modelo); */
+let auto2 = new Automovil("Mazda-2", "Sedan", 80700000, "2019 ·", " 12.000 km ·", " Pitalito-Huila", "img/mazda.jfif");
+let auto3 = new Automovil("Chevrolet", "Silverado Trail Boss Z71", 267990000, "2023 ·", " 0 km ·", " Pitalito-Huila", "img/silverado.png");
+let auto4 = new Automovil("Renault", "Duster Iconic ", 91000000, "2024 ·", " 0 Km ·", " Pitalito-Huila", "img/duster.jpg");
+let auto5 = new Automovil("Renoult", " Kwid Outsider", 59220000, "2024 ·", " 0 km ·", " Pitalito-Huila", "img/outsider.webp");
 
-window.addEventListener("load", function(event) {
 
-/* inputBusqueda.addEventListener("keydown", function(event) {
-    if(event.key == "Enter"){ */
+/* for (contador = 1; contador <= 2; contador++){ */
+        /* Funcion para cargar el vehículo */
+    CargarVehiculo(auto1);
+    CargarVehiculo(auto2);
+    CargarVehiculo(auto3);
+    CargarVehiculo(auto4); 
+    CargarVehiculo(auto5);
+
+window.addEventListener("keydown", function(event) {
+    let busqueda = document.getElementById("inputBusqueda").value;
+    if (event.key == "Enter") {
+        let inputUser = busqueda.tolowerCase();
+        if (inputUser == "mazda"){
+            CargarVehiculo(auto2);
+        }
+    }else if (inputUser == ) {
+
+    }
+});
+
+/*inputBusqueda.addEventListener("keydown", function(event) {
+    if(event.key == "Enter"){
+    let mainContent = document.getElementById("mainContent"); */
+
+
+function CargarVehiculo(auto) {
     let mainContent = document.getElementById("mainContent");
 
     /* Caja del producto */
@@ -31,7 +58,7 @@ window.addEventListener("load", function(event) {
     boxImg.setAttribute("class", "box-img");
     let imgAuto = document.createElement("img");
     boxImg.appendChild(imgAuto);
-    imgAuto.setAttribute("src", auto1.imagen);
+    imgAuto.setAttribute("src", auto.imagen);
     imgAuto.setAttribute("class", "img-auto")
 
     /* Caja para información */
@@ -40,14 +67,14 @@ window.addEventListener("load", function(event) {
     boxInfo.setAttribute("class", "box-info");
     let marca = document.createElement("label");
     boxInfo.appendChild(marca);
-    let textNodeMarca = document.createTextNode(auto1.marca + "" + auto1.modelo);
+    let textNodeMarca = document.createTextNode(auto.marca + "" + auto.modelo);
     marca.appendChild(textNodeMarca);
     marca.setAttribute("class", "marca");
 
     /* Precio */
     let  precio= document.createElement("label");
     boxInfo.appendChild(precio);
-    let precioStr = Intl.NumberFormat('de-DE').format(auto1.precio);
+    let precioStr = Intl.NumberFormat('de-DE').format(auto.precio);
     let textNodePrecio = document.createTextNode("$" + precioStr);
     precio.appendChild(textNodePrecio);
     precio.setAttribute("class", "precio")
@@ -55,7 +82,7 @@ window.addEventListener("load", function(event) {
     /* año */
     let  año = document.createElement("label");
     boxInfo.appendChild(año);
-    let añoStr = auto1.year;
+    let añoStr = auto.year;
     let textNodeAño = document.createTextNode(añoStr);
     año.appendChild(textNodeAño);
     año.setAttribute("class", "año")
@@ -63,7 +90,7 @@ window.addEventListener("load", function(event) {
     /* kilometros */
     let kilometros = document.createElement("label");
     boxInfo.appendChild(kilometros);
-    let kilometrosStr = auto1.kilometros;
+    let kilometrosStr = auto.kilometros;
     let textNodeKilometros = document.createTextNode(kilometrosStr);
     kilometros.appendChild(textNodeKilometros);
     kilometros.setAttribute("class", "kilometros")
@@ -71,7 +98,7 @@ window.addEventListener("load", function(event) {
     /* Ubicación */
     let ubicacion = document.createElement("label");
     boxInfo.appendChild(ubicacion);
-    let ubicacionStr = auto1.ubicacion;
+    let ubicacionStr = auto.ubicacion;
     let textNodeUbicacion = document.createTextNode(ubicacionStr);
     ubicacion.appendChild(textNodeUbicacion);
     ubicacion.setAttribute("class", "ubicacion")
@@ -90,4 +117,4 @@ window.addEventListener("load", function(event) {
     lineaDiv.setAttribute("class", "linea-div");
     
     /* } */
-});
+}
