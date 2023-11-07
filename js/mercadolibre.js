@@ -27,7 +27,7 @@ let auto5 = new Automovil("Renoult", " Kwid Outsider", 59220000, "2024 ·", " 0 
     CargarVehiculo(auto4); 
     CargarVehiculo(auto5);
 
-window.addEventListener("keydown", function(event) {
+/* window.addEventListener("keydown", function(event) {
     let busqueda = document.getElementById("inputBusqueda").value;
     if (event.key == "Enter") {
         let inputUser = busqueda.tolowerCase();
@@ -37,7 +37,7 @@ window.addEventListener("keydown", function(event) {
     }else if (inputUser == ) {
 
     }
-});
+}); */
 
 /*inputBusqueda.addEventListener("keydown", function(event) {
     if(event.key == "Enter"){
