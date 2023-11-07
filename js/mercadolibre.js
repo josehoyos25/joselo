@@ -13,9 +13,9 @@ class Automovil {
 }
 let auto1 = new Automovil("Toyota", "TXL", 150000000, "2021 ·", " 25.400 km ·", " Pitalito-Huila", "img/Toyota_Prado.jpg");
 /* alert (auto1.marca + " " + auto1.modelo); */
-let auto2 = new Automovil("Mazda-2", "Sedan", 80700000, "2019 ·", " 12.000 km ·", " Pitalito-Huila", "img/mazda.jfif");
-let auto3 = new Automovil("Chevrolet", "Silverado Trail Boss Z71", 267990000, "2023 ·", " 0 km ·", " Pitalito-Huila", "img/silverado.png");
-let auto4 = new Automovil("Renault", "Duster Iconic ", 91000000, "2024 ·", " 0 Km ·", " Pitalito-Huila", "img/duster.jpg");
+let auto2 = new Automovil("Mazda-2", " Sedan", 80700000, "2019 ·", " 12.000 km ·", " Pitalito-Huila", "img/mazda.jfif");
+let auto3 = new Automovil("Chevrolet", " Silverado Trail Boss Z71", 267990000, "2023 ·", " 0 km ·", " Pitalito-Huila", "img/silverado.png");
+let auto4 = new Automovil("Renault", " Duster Iconic ", 91000000, "2024 ·", " 0 Km ·", " Pitalito-Huila", "img/duster.jpg");
 let auto5 = new Automovil("Renoult", " Kwid Outsider", 59220000, "2024 ·", " 0 km ·", " Pitalito-Huila", "img/outsider.webp");
 
 
@@ -27,17 +27,25 @@ let auto5 = new Automovil("Renoult", " Kwid Outsider", 59220000, "2024 ·", " 0 
     CargarVehiculo(auto4); 
     CargarVehiculo(auto5);
 
-/* window.addEventListener("keydown", function(event) {
-    let busqueda = document.getElementById("inputBusqueda").value;
-    if (event.key == "Enter") {
-        let inputUser = busqueda.tolowerCase();
-        if (inputUser == "mazda"){
-            CargarVehiculo(auto2);
-        }
-    }else if (inputUser == ) {
+    window.addEventListener("keydown", function(event) {
+        let busqueda = document.getElementById("inputBusqueda").value;
+        if (event.key == "Enter") 
+        boxProductos.innerHtml = "";
+            let inputUser = busqueda.tolowerCase();
+            if (inputUser == "mazda"){
+                CargarVehiculo(auto2);
 
-    }
-}); */
+            }else if (inputUser == "renault" ) {
+                CargarVehiculo(auto4); 
+                CargarVehiculo(auto5);
+            }else if (inputUser == "chevrolet"){
+                CargarVehiculo(auto3);
+            }
+            else if(inputUser == "toyota") {
+                CargarVehiculo(auto1);
+            };
+            });
+
 
 /*inputBusqueda.addEventListener("keydown", function(event) {
     if(event.key == "Enter"){
@@ -118,3 +126,11 @@ function CargarVehiculo(auto) {
     
     /* } */
 }
+    /* Filtros */
+    cargarFiltro();
+    
+    function cargarFiltro() {
+        let boxFiltro = document.createElement("div");
+        mainContent.appendChild(boxFiltro);
+        boxFiltro.setAttribute("class", "box-filtro");
+    }
