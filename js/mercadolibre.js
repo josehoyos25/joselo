@@ -45,12 +45,6 @@ let auto5 = new Automovil("Renoult", " Kwid Outsider", 59220000, "2024 ·", " 0 
         }
     });
 
-
-/*inputBusqueda.addEventListener("keydown", function(event) {
-    if(event.key == "Enter"){
-    let mainContent = document.getElementById("mainContent"); */
-
-
 function CargarVehiculo(auto) {
     let mainContent = document.getElementById("mainContent");
 
@@ -133,3 +127,21 @@ function CargarVehiculo(auto) {
         mainContent.appendChild(boxFiltro);
         boxFiltro.setAttribute("class", "box-filtro");
     }
+    /* Toggle */
+    let boxToggle = document.getElementById("boxToggle");
+    let buttonToggle = document.getElementById("buttonToggle");
+
+    boxToggle.addEventListener("click", () =>{
+        if (boxToggle.classList.contains("box-toggle-off")) {
+        boxToggle.classList.add("box-toggle-on");
+        boxToggle.classList.remove("box-toggle-off");
+        boxToggle.classList.add("button-toggle-on");
+        boxToggle.classList.remove("button-toggle-off");
+        }
+        else{
+            boxToggle.classList.remove("box-toggle-on");
+            boxToggle.classList.add("box-toggle-off");
+            buttonToggle.classList.remove("button-toggle-on");
+            buttonToggle.classList.add("button-toggle-off");
+        }
+    });
