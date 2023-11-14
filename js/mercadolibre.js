@@ -28,23 +28,22 @@ let auto5 = new Automovil("Renoult", " Kwid Outsider", 59220000, "2024 ·", " 0 
     CargarVehiculo(auto5);
 
     window.addEventListener("keydown", function(event) {
-        let busqueda = document.getElementById("inputBusqueda").value;
-        if (event.key == "Enter") 
-        boxProductos.innerHtml = "";
-            let inputUser = busqueda.tolowerCase();
-            if (inputUser == "mazda"){
+        let busqueda = inputBusqueda.value;
+        if (event.key == "Enter") {
+            mainContent.innerHTML = "";  // Corrige aquí el nombre de la propiedad
+            let inputUser = busqueda.toLowerCase();
+            if (inputUser == "mazda") {
                 CargarVehiculo(auto2);
-
-            }else if (inputUser == "renault" ) {
-                CargarVehiculo(auto4); 
+            } else if (inputUser == "renault") {
+                CargarVehiculo(auto4);
                 CargarVehiculo(auto5);
-            }else if (inputUser == "chevrolet"){
+            } else if (inputUser == "chevrolet") {
                 CargarVehiculo(auto3);
-            }
-            else if(inputUser == "toyota") {
+            } else if (inputUser == "toyota") {
                 CargarVehiculo(auto1);
-            };
-            });
+            }
+        }
+    });
 
 
 /*inputBusqueda.addEventListener("keydown", function(event) {
