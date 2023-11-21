@@ -110,18 +110,14 @@ img{
     color: rgb(30, 144, 255);
     font-size: 1.1em;
 }
-.filtro-visible {
+/* .filtros-visible {
     width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: white;
-}
+} */
 
 @media only screen and (min-width: 420px) {
     .main-content {
-        background-color: rgb(235, 235, 235,.9);
+        /* background-color: rgb(235, 235, 235,.9); */
         display: grid;
         grid-template: "box-filtro box-productos";
     }
@@ -129,9 +125,10 @@ img{
         grid-area: box-productos;
     }
     .box-filtro{
+        grid-area: box-filtro;
+        background-color: azure;
         width: 200px;
         height: 100vh;
-        /* background-color: red; */
     }
     .box-toggle {
         margin: 50px 0 0 50px;
@@ -143,25 +140,18 @@ img{
         position: relative;
         cursor: pointer;
     }
-    .box-toggle:hover{
-        background-color: rgb(52, 131, 250);
-    }
-    .box-toggle:hover .button-toggle{
-    left: 63px;
-    }
     .button-toggle {
         width: 54px;
         height: 54px;
         border-radius: 27px;
         background-color: #fff;
-        margin-left: 3px;
-        position: absolute;
+        padding-left: 3px;
+        position: relative;
         transition: left 300ms;
     }
     .button-toggle-off {
         left: 3px;
-    }
-    .button-toggle-on {
+    }.button-toggle-on {
         left: 63px;
     }
     .box-toggle-off {
