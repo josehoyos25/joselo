@@ -1,34 +1,38 @@
-let calificacion1 = document.getElementById("calificacion1");
-let calificacion2 = document.getElementById("calificacion2");
-let calificacion3 = document.getElementById("calificacion3");
-let calificacion4 = document.getElementById("calificacion4");
-let calificacion5 = document.getElementById("calificacion5");
-let btnGraficar = document.getElementById("btnGraficar");
+let enviar = document.getElementById("button");
 
-btnGraficar.addEventListener("click", function () {
-    let sumaCalificacion = (
-        Number(calificacion1.value) +
-        Number(calificacion2.value) +
-        Number(calificacion3.value) +
-        Number(calificacion4.value) +
-        Number(calificacion5.value)
-    );
+enviar.addEventListener("click", function () {
+    // Obtener los valores de las calificaciones
+    let calificacion1 = parseInt(document.getElementById("calificacion1").value) || 0;
+    let calificacion2 = parseInt(document.getElementById("calificacion2").value) || 0;
+    let calificacion3 = parseInt(document.getElementById("calificacion3").value) || 0;
+    let calificacion4 = parseInt(document.getElementById("calificacion4").value) || 0;
+    let calificacion5 = parseInt(document.getElementById("calificacion5").value) || 0;
 
-    // Verificar si la suma es mayor a cero para evitar división por cero
-    if (sumaCalificacion > 0) {
-        let promedio1Estrella = (Number(calificacion1.value) / sumaCalificacion) * 100;
-        let promedio2Estrella = (Number(calificacion2.value) / sumaCalificacion) * 100;
-        let promedio3Estrella = (Number(calificacion3.value) / sumaCalificacion) * 100;
-        let promedio4Estrella = (Number(calificacion4.value) / sumaCalificacion) * 100;
-        let promedio5Estrella = (Number(calificacion5.value) / sumaCalificacion) * 100;
+    // total
+    let total = calificacion1 + calificacion2 + calificacion3 + calificacion4 + calificacion5;
 
-        // Mostrar resultados en elementos HTML
-        document.getElementById("result1").textContent =  + promedio1Estrella.toFixed(2) + "%";
-        document.getElementById("result2").textContent =  + promedio2Estrella.toFixed(2) + "%";
-        document.getElementById("result3").textContent =  + promedio3Estrella.toFixed(2) + "%";
-        document.getElementById("result4").textContent =  + promedio4Estrella.toFixed(2) + "%";
-        document.getElementById("result5").textContent =  + promedio5Estrella.toFixed(2) + "%";
-    } else {
-        console.log("La suma de calificaciones es cero. No se puede calcular el porcentaje.");
-    }
+    // porcentaje de cada calificación
+    let porcentaje1 = (calificacion1 / total) * 100;
+    let porcentaje2 = (calificacion2 / total) * 100;
+    let porcentaje3 = (calificacion3 / total) * 100;
+    let porcentaje4 = (calificacion4 / total) * 100;
+    let porcentaje5 = (calificacion5 / total) * 100;
+
+    // Mostrar los resultados y ajustar las barras
+    mostrarPorcentaje("porcentaje1", "barra1", porcentaje1);
+    mostrarPorcentaje("porcentaje2", "barra2", porcentaje2);
+    mostrarPorcentaje("porcentaje3", "barra3", porcentaje3);
+    mostrarPorcentaje("porcentaje4", "barra4", porcentaje4);
+    mostrarPorcentaje("porcentaje5", "barra5", porcentaje5);
 });
+
+function mostrarPorcentaje(idPorcentaje, idBarra, porcentaje) {
+    let elementoPorcentaje = document.getElementById(idPorcentaje);
+    elementoPorcentaje.innerHTML = porcentaje.toFixed(1) + "%";
+
+    // Obtener la barra asociada al porcentaje
+    let barra = document.getElementById(idBarra);
+
+    // Ajustar la longitud de la barra según el porcentaje
+    barra.style.width = porcentaje + "%";
+}

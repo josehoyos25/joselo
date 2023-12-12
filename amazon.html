@@ -7,26 +7,63 @@
     <link rel="stylesheet" href="css/amazon.css">
 </head>
 <body>
-    <div class="barra-calificacion-1">
-        <div class="puntaje-barra-1"></div>
-    </div>
     <div class="container">
-    <label>1 Estrella</label>
-    <input type="text" id="calificacion1" class="calificacion-1">
-    <p id="result1"></p>
-    <label>2 Estrellas</label>
-    <input type="text" id="calificacion2" class="calificacion-2">
-    <p id="result2"></p>
-    <label>3 Estrellas</label>
-    <input type="text" id="calificacion3" class="calificacion-3">
-    <p id="result3"></p>
-    <label>4 Estrellas</label>
-    <input type="text" id="calificacion4" class="calificacion-4">
-    <p id="result4"></p>
-    <label>5 Estrellas</label>
-    <input type="text" id="calificacion5" class="calificacion-5">
-    <p id="result5"></p>
-    <input id="btnGraficar" type="button" value="Graficar">
+        <div class="content">
+            <h1>PORCENTAJE</h1>
+            <div class="porcentaje">
+                <div class="input-porcent">
+                <p>5 Estrellas</p>
+                <div class="input"><input id="calificacion1" type="number"></div>
+                <div class="porcent"><p id="porcentaje1"></p></div>
+                </div>
+                <div class="barra-porcent">
+                    <div class="barra" id="barra1"></div>
+                </div>
+            </div>
+            <div class="porcentaje">
+                <div class="input-porcent">
+                    <p>4 Estrellas</p>
+                <div class="input"><input id="calificacion2" type="number"></div>
+                <div class="porcent"><p id="porcentaje2"></p></div>
+                </div>
+                <div class="barra-porcent">
+                    <div class="barra" id="barra2"></div>
+                </div>
+            </div>
+            <div class="porcentaje">
+                <div class="input-porcent">
+                    <p>3 Estrellas</p>
+                <div class="input"><input id="calificacion3" type="number"></div>
+                <div class="porcent"><p id="porcentaje3"></p></div>
+                </div>
+                <div class="barra-porcent">
+                    <div class="barra" id="barra3"></div>
+                </div>
+            </div>
+            <div class="porcentaje">
+                <div class="input-porcent">
+                    <p>2 Estrellas</p>
+                <div class="input"><input id="calificacion4" type="number"></div>
+                <div class="porcent"><p id="porcentaje4"></p></div>
+                </div>
+                <div class="barra-porcent">
+                    <div class="barra" id="barra4"></div>
+                </div>
+            </div>
+            <div class="porcentaje">
+                <div class="input-porcent">
+                    <p>1 Estrella</p>
+                <div class="input"><input id="calificacion5" type="number"></div>
+                <div class="porcent"><p id="porcentaje5"></p></div>
+                </div>
+                <div class="barra-porcent">
+                    <div class="barra" id="barra5"></div>
+                </div>
+            </div>
+        </div>
+        <div class="button" >
+        <input type="submit" class="btn-enviar" id="button" value="ENVIAR">
+        </div>
     </div>
     <script src="js/amazon.js"></script>
 </body>
