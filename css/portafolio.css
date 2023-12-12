@@ -45,8 +45,7 @@ h1{
                    "empty-izq   sombras    catalogo  tablas " 500px 
                    "empty-izq   formulario   iconos   menus " 500px 
                    "empty-izq   css        replica     carrito " 500px
-                   "empty-izq   mercadolibre replica     carrito " 500px 
-                   "empty-izq   estrellas    raandom    random"   / 
+                   "empty-izq   mercadolibre estrellas  porcentaje  " /
                     1fr         350px        350px      350px        1fr;
 }
 .colores{
@@ -91,8 +90,8 @@ h1{
 .estrellas{
     grid-area: estrellas;
 }
-.raandom{
-    grid-area: raandom;
+.porcentaje{
+    grid-area: porcentaje;
 }
 .random{
     grid-area: random;
